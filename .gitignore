@@ -1,0 +1,4 @@
+.vscode/
+.metals/
+# Ignore input files
+*.in
