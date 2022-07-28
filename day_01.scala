@@ -3,8 +3,9 @@ import scala.io.Source
 def calcCost(mass: Int): Int = mass / 3 - 2
 
 @main def main(): Unit = {
-  val puzzleInput: List[Int] =
-    Source.fromFile("day_01.in").getLines().map(_.toInt).toList
+  val file = Source.fromFile("day_01.in")
+  val puzzleInput: List[Int] = file.getLines().map(_.toInt).toList
+  file.close
 
   // Part 1
 
